@@ -1,17 +1,19 @@
+
 body {
-  font-family: Arial, sans-serif;
-  background: #f0f8ff;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff8f0;
   color: #333;
-  direction: rtl;
   margin: 0;
   padding: 0;
+  direction: rtl;
 }
 
 header {
-  background: linear-gradient(to left, #00c6ff, #0072ff);
+  background: #f2994a;
   color: white;
   padding: 20px;
   text-align: center;
+  border-bottom: 4px solid #f38b00;
 }
 
 nav a {
@@ -25,33 +27,35 @@ main {
   padding: 20px;
 }
 
-ul {
+section.apropos ul {
   list-style: none;
   padding: 0;
 }
 
 .gallery {
   display: flex;
-  gap: 10px;
   flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
 }
 
 .gallery img {
-  width: 30%;
+  width: 250px;
+  height: auto;
   border-radius: 10px;
-  box-shadow: 0 0 5px #ccc;
+  box-shadow: 0 0 5px #aaa;
 }
 
 form {
+  background: #fff;
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+  box-shadow: 0 0 10px #ccc;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  max-width: 400px;
-  margin: auto;
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #ccc;
 }
 
 input[type="text"],
@@ -60,20 +64,21 @@ input[type="tel"],
 input[type="email"],
 input[type="submit"] {
   padding: 10px;
-  border-radius: 5px;
   border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 input[type="submit"] {
-  background-color: #0072ff;
+  background-color: #f2994a;
   color: white;
   border: none;
   cursor: pointer;
+  font-weight: bold;
 }
 
 footer {
-  background: #eee;
   text-align: center;
+  background: #f4f4f4;
   padding: 10px;
   margin-top: 40px;
 }
